@@ -6,7 +6,7 @@ This is a compressed version of the default Lucid Lynx theme to conserve space o
 
 ###Step 1:
 
-Download a tarball: http://github.com/Rio517/AmbianceCompact/tarball/master
+Download a tarball: [http://github.com/Rio517/AmbianceCompact/tarball/master](http://github.com/Rio517/AmbianceCompact/tarball/master)
 
 or
 
