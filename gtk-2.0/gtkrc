@@ -1,8 +1,9 @@
-# Ambiance theme
+# AmbianceCompact theme
 #
 # Authors:
 # Kenneth Wimer <kwwii@ubuntu.com>
 # James Schriver <jws141@gmail.com>
+# Mario Olivio Flores http://github.com/Rio517
 #
 # Feel free to modify and share!
 
@@ -30,34 +31,48 @@ style "default"
 	GtkButton::child-displacement-x = 1
 	GtkButton::child-displacement-y = 1
 	GtkButton::default-border = { 0, 0, 0, 0 }
+	GtkButton::default-outside-border = { 0, 0, 0, 0 }
 
-	GtkCheckButton::indicator-size = 14
+	GtkButtonBox::child_min_width = 0
+	GtkButtonBox::child_min_heigth = 0
+	GtkButtonBox::child_internal_pad_x = 0
+	GtkButtonBox::child_internal_pad_y = 0
 
-	GtkPaned::handle-size = 6
+        GtkWidget::focus_padding = 0
 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 16
-	GtkRange::stepper-size = 20
+	GtkPaned::handle-size = 4
+	GtkRange::slider-width = 14
+	GtkRange::stepper-size = 15
+	GtkRange::stepper-spacing = 0
         GtkRange::trough-under-steppers = 0
 
-	GtkScale::slider-length = 28
+	GtkScale::slider-length = 23
+	GtkScale::value-spacing = 0
 	GtkScale::trough-side-details = 1
 
-	GtkScrollbar::min-slider-length = 36
+	GtkScrollbar::min-slider-length = 30
 	GtkScrollbar::activate-slider = 1
+	GtkScrolledWindow::scrollbar_spacing = 0
+        GtkCheckButton::indicator-size = 14
 	GtkMenuBar::internal-padding = 0
-	GtkExpander::expander-size = 15
-	GtkToolbar::internal-padding = 5
-	GtkTreeView::expander-size = 15
+	GtkExpander::expander-size = 11
+	GtkExpander::expander-spacing = 11
+	GtkToolbar::internal-padding = 0
+	GtkToolbar::space-size = 10
+	
+        GtkTreeView::expander-size = 11
+	GtkTreeView::expander-spacing = 0
 	GtkTreeView::indent-expanders = 1
 	GtkTreeView::vertical-separator = 0
+	GtkTreeView::horizontal-separator = 0
 	#GtkProgressBar ::min-vertical-bar-width = 14
 	#GtkProgressBar ::min-horizontal-bar-width = 14
 	#GtkProgressBar ::min-horizontal-bar-height = 14
 	#GtkProgressBar ::min-vertical-bar-height = 12
 
-	GtkMenu::horizontal-padding = 1
-	GtkMenu::vertical-padding = 1
+	GtkMenu::horizontal-padding = 0
+	GtkMenu::vertical-padding = 0
 
 	WnckTasklist::fade-overlay-rect = 0
 	# The following line hints to gecko (and possibly other appliations)
@@ -188,12 +203,12 @@ style "wide"
 style "wider"
 {
 	xthickness = 3
-	ythickness = 3
+	ythickness = 2
 }
 
 style "entry" {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 1
+	ythickness = 1
 
 	bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
 	fg[SELECTED] = @text_color
@@ -207,8 +222,8 @@ style "entry" {
 
 style "button" = "selected"
 {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 0
+	ythickness = 0
 
 	bg[NORMAL]   = shade (0.9, @selected_bg_color)
 	bg[PRELIGHT] = shade (1.0, @selected_bg_color)
@@ -234,6 +249,8 @@ style "toolbar-item" = "toolbar"
 
 style "notebook" = "wider"
 {
+	xthickness = 2
+	ythickness = 2
 	engine "murrine"
 	{
 		contrast = 0.6
@@ -282,7 +299,7 @@ style "menu" = "dark"
 style "menu-item" = "menu"
 {
 	xthickness = 0
-	ythickness = 5
+	ythickness = 0
 
 	engine "murrine"
 	{
@@ -292,11 +309,11 @@ style "menu-item" = "menu"
 
 style "separator-menu-item"
 {
-	#GtkSeparatorMenuItem::horizontal-padding = 6
+	#GtkSeparatorMenuItem::horizontal-padding = 3
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 2
-	xthickness = 4
+	xthickness = 2
 	ythickness = 0
 	bg[NORMAL]= shade(0.4, @selected_bg_color)
 }
@@ -309,8 +326,8 @@ style "treeview"
 
 style "treeview-header" = "selected"
 {
-	xthickness = 2
-	ythickness = 1
+	xthickness = 0
+	ythickness = 0
 
 	engine "murrine"
 	{
@@ -320,8 +337,8 @@ style "treeview-header" = "selected"
 
 style "tooltips"
 {
-	xthickness = 8
-	ythickness = 5
+	xthickness = 3
+	ythickness = 2
 
 	bg[NORMAL] = @tooltip_bg_color
 	bg[SELECTED] = "#000000"
@@ -330,8 +347,8 @@ style "tooltips"
 
 style "progressbar" 
 {
-	xthickness = 1
-	ythickness = 1
+	xthickness = 0
+	ythickness = 0
 	
 	engine "murrine"
 	{
@@ -360,8 +377,8 @@ style "statusbar" = "default"
 
 style "comboboxentry" 
 {
-	ythickness = 3
-	xthickness = 3
+	ythickness = 0
+	xthickness = 0
 
 	engine "murrine"
 	{
