@@ -1,3 +1,15 @@
 This is a version of the default theme that is compressed to conserver space, but still maintain it's attractiveness. As much as I like to default theme, it uses a lot of extra space on padding and big buttons that I would prefer were more optimized.
 
+Installation:
+
+Download a tarball: http://github.com/Rio517/AmbianceCompact/tarball/master
+
+If you have git installed, you can clone the repo: git clone http://github.com/Rio517/AmbianceCompact.git
+
+Then place the AmbianceCompact directory you've unpacked/downloaded into ~/.themes
+
+
+------------------------------------------------------------
 This was first modified following the suggestions made here: http://martin.ankerl.com/2008/10/10/how-to-make-a-compact-gnome-theme/
+
+If you would like to contribute, fork this repo then send me a pull request.
